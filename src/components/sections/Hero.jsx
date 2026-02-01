@@ -3,7 +3,7 @@ import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="relative overflow-hidden" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: 'var(--nav-height)' }}>
+        <section className="relative overflow-hidden" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: 'max(var(--nav-height), 100px)' }}>
             {/* Background Glows */}
             <div className="absolute pulse z-minus"
                 style={{
@@ -27,7 +27,7 @@ const Hero = () => {
                     animationDelay: '1.5s'
                 }} />
 
-            <div className="container relative z-10 grid grid-2 items-center" style={{ gap: '48px' }}>
+            <div className="container relative z-10 grid grid-2 items-center" style={{ gap: 'clamp(32px, 8vw, 64px)' }}>
                 {/* Text Content */}
                 <div className="flex flex-col gap-8 animate-fade-in">
                     <div className="glass" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', alignSelf: 'flex-start', fontSize: '0.875rem', color: 'var(--accent-cyan)' }}>
@@ -68,7 +68,7 @@ const Hero = () => {
                 </div>
 
                 {/* Visual Content */}
-                <div className="glass animate-fade-in p-mobile-4" style={{ padding: '40px', animationDelay: '0.2s', border: '1px solid rgba(255,255,255,0.1)', overflow: 'hidden' }}>
+                <div className="glass animate-fade-in p-mobile-4" style={{ padding: '40px', animationDelay: '0.2s', border: '1px solid rgba(255,255,255,0.1)', overflow: 'hidden', width: '100%', maxWidth: '600px', margin: '0 auto' }}>
                     <div className="flex flex-col gap-6">
                         <div className="flex justify-between items-center" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '16px' }}>
                             <div className="flex gap-2">

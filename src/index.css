@@ -342,6 +342,14 @@ h3 {
   width: 100% !important;
 }
 
+.hover-white:hover {
+  color: #fff !important;
+}
+
+.hover-cyan:hover {
+  color: var(--accent-cyan) !important;
+}
+
 @media (max-width: 768px) {
   .text-huge {
     font-size: 2.25rem !important;
@@ -362,6 +370,7 @@ h3 {
   .grid-2,
   .grid-3,
   .grid-4 {
-    gap: 16px !important;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 }
