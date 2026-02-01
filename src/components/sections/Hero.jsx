@@ -95,7 +95,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div style={{ paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', justifyBetween: 'space-between', alignItems: 'center' }}>
+                        <div style={{ paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <span style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)' }}>● Agent Active</span>
                             <div className="flex gap-1 items-end" style={{ height: '24px' }}>
                                 {[...Array(8)].map((_, i) => (
