@@ -13,7 +13,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[var(--bg-dark)] text-white overflow-x-hidden">
+    <div className="bg-dark text-white overflow-hidden" style={{ minHeight: '100vh' }}>
       <Navbar />
 
       <main>

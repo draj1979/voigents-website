@@ -3,65 +3,65 @@ import { Mic, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-black/80 border-t border-white/10 pt-16 pb-8">
+        <footer style={{ background: 'rgba(0,0,0,0.8)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '64px', paddingBottom: '32px' }}>
             <div className="container">
-                <div className="grid md:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-4" style={{ marginBottom: '48px' }}>
                     {/* Brand */}
-                    <div className="col-span-1 md:col-span-1">
-                        <a href="#" className="flex items-center gap-2 mb-4">
-                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-fuchsia-500 flex-center">
+                    <div className="flex flex-col gap-4">
+                        <a href="#" className="flex items-center gap-2">
+                            <div className="flex-center" style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-pink))' }}>
                                 <Mic size={20} color="#000" />
                             </div>
-                            <span className="text-2xl font-bold tracking-tight text-white">
+                            <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#fff' }}>
                                 Voigents
                             </span>
                         </a>
-                        <p className="text-gray-400 text-sm mb-6">
+                        <p className="text-secondary" style={{ fontSize: '0.875rem' }}>
                             Empowering businesses with intelligent, scalable, and human-like voice automation.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
+                            <a href="#" className="text-secondary" style={{ hover: { color: '#fff' } }}><Twitter size={20} /></a>
+                            <a href="#" className="text-secondary" style={{ hover: { color: '#fff' } }}><Linkedin size={20} /></a>
+                            <a href="#" className="text-secondary" style={{ hover: { color: '#fff' } }}><Github size={20} /></a>
                         </div>
                     </div>
 
                     {/* Links */}
                     <div>
-                        <h4 className="font-bold mb-4 text-white">Product</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Features</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Use Cases</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Integrations</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Pricing</a></li>
+                        <h4 style={{ fontWeight: 'bold', marginBottom: '16px', color: '#fff' }}>Product</h4>
+                        <ul className="flex flex-col gap-2" style={{ listStyle: 'none', fontSize: '0.875rem' }}>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Features</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Use Cases</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Integrations</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Pricing</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-4 text-white">Company</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">About Us</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Blog</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Contact</a></li>
+                        <h4 style={{ fontWeight: 'bold', marginBottom: '16px', color: '#fff' }}>Company</h4>
+                        <ul className="flex flex-col gap-2" style={{ listStyle: 'none', fontSize: '0.875rem' }}>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>About Us</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Careers</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Blog</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Contact</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-4 text-white">Legal</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Privacy Policy</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Terms of Service</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Responsible AI</a></li>
+                        <h4 style={{ fontWeight: 'bold', marginBottom: '16px', color: '#fff' }}>Legal</h4>
+                        <ul className="flex flex-col gap-2" style={{ listStyle: 'none', fontSize: '0.875rem' }}>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Privacy Policy</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Terms of Service</a></li>
+                            <li><a href="#" className="text-secondary" style={{ hover: { color: 'var(--accent-cyan)' } }}>Responsible AI</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-500 text-sm">
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '32px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                    <p className="text-secondary" style={{ fontSize: '0.875rem' }}>
                         © {new Date().getFullYear()} Voigents Inc. All rights reserved.
                     </p>
-                    <p className="text-gray-600 text-xs max-w-md text-center md:text-right">
+                    <p className="text-secondary" style={{ fontSize: '0.75rem', textAlign: 'center', maxWidth: '480px', opacity: 0.6 }}>
                         Voigents AI agents are designed to assist and automate. Users should always be informed they are speaking with an AI.
                     </p>
                 </div>
