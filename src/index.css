@@ -333,3 +333,35 @@ h3 {
     transform: scale(1.05);
   }
 }
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.w-full-mobile {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .text-huge {
+    font-size: 2.25rem !important;
+  }
+
+  .text-large {
+    font-size: 1.125rem !important;
+  }
+
+  .p-mobile-4 {
+    padding: 16px !important;
+  }
+
+  .m-mobile-0 {
+    margin: 0 !important;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    gap: 16px !important;
+  }
+}
