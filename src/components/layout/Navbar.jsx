@@ -33,12 +33,12 @@ const Navbar = () => {
       }}
     >
       <div className="container flex items-center justify-between" style={{ width: '100%' }}>
-        {/* Logo - EXACTLY same as Footer */}
+        {/* Logo - Restored to original styling */}
         <a href="#" className="flex items-center gap-2">
           <div className="flex-center" style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-pink))', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Mic size={20} color="#000" />
           </div>
-          <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#fff' }}>
+          <span className="text-2xl font-bold tracking-tight text-white">
             Voigents
           </span>
         </a>
