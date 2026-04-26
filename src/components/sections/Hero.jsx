@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
+import VoiceOrb from '../ui/VoiceOrb';
 
 const Hero = () => {
     return (
@@ -77,7 +78,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Visual Content - New Image */}
+                {/* Visual Content - Animated Voice Orb */}
                 <div className="animate-fade-in" style={{ animationDelay: '0.2s', width: '100%', display: 'flex', justifyContent: 'center' }}>
                     <div className="glass" style={{
                         padding: '12px',
@@ -89,16 +90,7 @@ const Hero = () => {
                         maxWidth: '500px',
                         width: '100%'
                     }}>
-                        <img
-                            src="/hero_ai_visual.png"
-                            alt="Voigents AI Voice Visualization"
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                                borderRadius: '16px',
-                                display: 'block'
-                            }}
-                        />
+                        <VoiceOrb />
                     </div>
                 </div>
             </div>
